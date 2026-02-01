@@ -1,7 +1,7 @@
 import os
 def encrypt_file(filename,key):
 	if not os.path.exists(filename):
-		print("kojja na kodaka sarigga rayi ra")
+		print("This is invalid file!!!!")
 		return
 	with open(filename,"rb") as f:
 		data = f.read()	

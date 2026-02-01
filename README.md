@@ -16,3 +16,5 @@ VantaBlack is a lightweight, netcat-compatible remote administration tool design
 Since this project is not repudable and windows will only tells you while running the installer that this is from unknown publisher other than that everything is success
 
 !!! Note this project is under building and will be updated whenever it is built completely like features are same like the stealth features are yet to be updated till now this was the progress
+
+TO just see the installer or .exe the password for smart_update to extract is 1234

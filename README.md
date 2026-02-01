@@ -13,18 +13,6 @@ VantaBlack is a lightweight, netcat-compatible remote administration tool design
 
 ## 🛡️ Windows Security & "Unknown Publisher" Warnings
 
-This project is an independent, unsigned security utility. Because it lacks a commercial EV Code Signing certificate, Windows SmartScreen will flag the `.exe` as an **"Unknown Publisher."** Additionally, due to its remote-access capabilities, some Antivirus engines may flag it as a "Generic RAT" or "Backdoor."
+Since this project is not repudable and windows will only tells you while running the installer that this is from unknown publisher other than that everything is success
 
-### How to Execute Safely:
-To run the binary without the "Windows protected your PC" block:
-
-1. **Unblock the File:**
-   Right-click `[YourApp].exe` > **Properties** > Check **Unblock** > **Apply**.
-   
-2. **SmartScreen Bypass:**
-   On the blue "Windows protected your PC" popup, click **More Info** and then **Run Anyway**.
-
-3. **Command Line (Recommended):**
-   Launch via a trusted parent process to avoid some UI-based reputation checks:
-   ```powershell
-   Start-Process -FilePath ".\[YourApp].exe" -ArgumentList "-e cmd.exe [YourIP] [Port]"
+!!! Note this project is under building and will be updated whenever it is built completely like features are same like the stealth features are yet to be updated till now this was the progress

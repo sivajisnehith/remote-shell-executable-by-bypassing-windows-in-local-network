@@ -53,3 +53,43 @@ To maximize performance and reduce runtime dependencies, VantaBlack is compiled 
 - **Nuitka**
 ```bash
 pip install nuitka
+
+### Compilation Command
+
+Run the following command in your terminal to generate the production-ready binary:
+
+```bash
+python -m nuitka \
+  --onefile \
+  --windows-disable-console \
+  --include-package=requests \
+  --remove-output \
+  --product-name="VantaBlack Core" \
+  --file-description="Network Diagnostics Utility" \
+  Vantablack.py
+
+
+---
+
+## 🏷️ Flag Explanations (README section)
+
+```markdown
+### Flag Explanations
+
+- `--onefile`  
+  Packages the entire application into a single, portable executable.
+
+- `--windows-disable-console`  
+  Prevents a visible console window from appearing during execution.
+
+- `--include-package=requests`  
+  Ensures the `requests` library is bundled correctly and avoids hidden-import issues.
+
+- `--remove-output`  
+  Removes temporary C++ build files after compilation is complete.
+
+- `--product-name`  
+  Sets the product name shown in Windows file properties.
+
+- `--file-description`  
+  Adds a descriptive label under file details, making the executable appear as a legitimate utility.
